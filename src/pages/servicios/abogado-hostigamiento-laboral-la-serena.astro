@@ -1,0 +1,57 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { services, siteConfig } from '../../data/content';
+
+const service = services.find(s => s.slug === 'abogado-hostigamiento-laboral-la-serena')!;
+---
+
+<BaseLayout title="Abogado Hostigamiento Laboral La Serena | Acoso y Denuncia" description="Denunciamos hostigamiento y acoso laboral en La Serena. Representación ante Inspección del Trabajo de Coquimbo y demandas por daño moral.">
+  <section class="bg-gradient-to-br from-[#1B3A5C] to-[#0D1634] text-white py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <nav class="text-sm text-gray-400 mb-4">
+        <a href="/" class="hover:text-white no-underline text-gray-400">Inicio</a> / <a href="/servicios" class="hover:text-white no-underline text-gray-400">Servicios</a> / <span class="text-white">Abogado Hostigamiento y Acoso Laboral en La Serena</span>
+      </nav>
+      <h1 class="text-3xl lg:text-4xl font-extrabold mb-4">Abogado Hostigamiento y Acoso Laboral en La Serena</h1>
+      <p class="text-xl text-gray-300 max-w-3xl">Defendemos a trabajadores víctimas de hostigamiento y acoso laboral en La Serena. Denuncia ante Inspección del Trabajo y demanda por daños.</p>
+    </div>
+  </section>
+
+  <section class="py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-3 gap-8">
+        <div class="lg:col-span-2">
+          <h2 class="text-2xl font-bold text-gray-900 mb-6">¿En qué consiste este servicio?</h2>
+          <div class="grid sm:grid-cols-2 gap-4 mb-10">
+            <div class="flex items-start gap-3"><svg class="w-5 h-5 text-[#C8A951] mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span class="text-gray-600 text-sm">Denuncia ante Inspección del Trabajo de Coquimbo</span></div>
+            <div class="flex items-start gap-3"><svg class="w-5 h-5 text-[#C8A951] mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span class="text-gray-600 text-sm">Demanda judicial por daños y perjuicios</span></div>
+            <div class="flex items-start gap-3"><svg class="w-5 h-5 text-[#C8A951] mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span class="text-gray-600 text-sm">Rescisión indirecta del contrato con indemnización completa</span></div>
+            <div class="flex items-start gap-3"><svg class="w-5 h-5 text-[#C8A951] mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span class="text-gray-600 text-sm">Recopilación de pruebas: testigos, mensajes y correos</span></div>
+            <div class="flex items-start gap-3"><svg class="w-5 h-5 text-[#C8A951] mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span class="text-gray-600 text-sm">Representación ante tribunales laborales de La Serena</span></div>
+            <div class="flex items-start gap-3"><svg class="w-5 h-5 text-[#C8A951] mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span class="text-gray-600 text-sm">Coordinación con servicios de salud ocupacional</span></div>
+          </div>
+          <h2 class="text-2xl font-bold text-gray-900 mb-6">Proceso</h2>
+          <div class="space-y-4 mb-10">
+            <div class="flex items-start gap-4 p-4 bg-gray-50 rounded-xl"><div class="w-8 h-8 bg-[#1B3A5C] rounded-lg flex items-center justify-center text-white font-bold text-sm shrink-0">1</div><span class="text-gray-700 text-sm">Escuchamos tu situación y documentamos todos los hechos de hostigamiento</span></div>
+            <div class="flex items-start gap-4 p-4 bg-gray-50 rounded-xl"><div class="w-8 h-8 bg-[#1B3A5C] rounded-lg flex items-center justify-center text-white font-bold text-sm shrink-0">2</div><span class="text-gray-700 text-sm">Recopilamos pruebas: testigos, correos, mensajes y cualquier evidencia</span></div>
+            <div class="flex items-start gap-4 p-4 bg-gray-50 rounded-xl"><div class="w-8 h-8 bg-[#1B3A5C] rounded-lg flex items-center justify-center text-white font-bold text-sm shrink-0">3</div><span class="text-gray-700 text-sm">Presentamos denuncia ante la Inspección del Trabajo y demanda judicial</span></div>
+            <div class="flex items-start gap-4 p-4 bg-gray-50 rounded-xl"><div class="w-8 h-8 bg-[#1B3A5C] rounded-lg flex items-center justify-center text-white font-bold text-sm shrink-0">4</div><span class="text-gray-700 text-sm">Representación completa hasta obtener compensación por daño moral</span></div>
+          </div>
+          <h2 class="text-2xl font-bold text-gray-900 mb-6">Preguntas Frecuentes</h2>
+          <div class="space-y-4 mb-10">
+            <details class="border border-gray-200 rounded-xl p-4 group"><summary class="font-semibold text-gray-900 cursor-pointer text-sm flex justify-between items-center">¿Qué constituye hostigamiento laboral según la ley chilena?<svg class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></summary><p class="text-gray-600 text-sm mt-3 leading-relaxed">Toda conducta reiterada que amenace, humille o atente contra tu dignidad, incluyendo insultos, aislamiento, carga excesiva de trabajo y violencia psicológica.</p></details>
+            <details class="border border-gray-200 rounded-xl p-4 group"><summary class="font-semibold text-gray-900 cursor-pointer text-sm flex justify-between items-center">¿Puedo renunciar y pedir indemnización si me hostigan en el trabajo?<svg class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></summary><p class="text-gray-600 text-sm mt-3 leading-relaxed">Sí. Si el empleador vulneró tus derechos fundamentales como la dignidad, puedes solicitar la rescisión indirecta del contrato y obtener indemnización completa.</p></details>
+            <details class="border border-gray-200 rounded-xl p-4 group"><summary class="font-semibold text-gray-900 cursor-pointer text-sm flex justify-between items-center">¿Qué pruebas sirven para demostrar hostigamiento laboral?<svg class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></summary><p class="text-gray-600 text-sm mt-3 leading-relaxed">Sirven testimonios de compañeros, correos electrónicos, mensajes de texto, registros audiovisuales, denuncias anteriores y cualquier documento que evidencie el acoso.</p></details>
+          </div>
+        </div>
+        <aside class="lg:col-span-1">
+          <div class="bg-[#E8EDF3] rounded-2xl p-6 sticky top-20">
+            <h3 class="font-bold text-lg text-[#1B3A5C] mb-2">¿Necesitas ayuda?</h3>
+            <p class="text-gray-600 text-sm mb-4">Primera consulta sin costo. WhatsApp en menos de 2 horas.</p>
+            <a href="https://wa.me/56912345678?text=Hola%2C%20necesito%20ayuda%20con%3A%20Abogado%20Hostigamiento%20y%20Acoso%20Laboral%20en%20La%20Serena" target="_blank" class="block bg-[#C8A951] text-[#1B3A5C] font-bold text-center px-4 py-3 rounded-xl hover:bg-[#D5B652] transition-colors no-underline text-sm mb-4">Consulta Gratis por WhatsApp</a>
+            <p class="text-gray-500 text-xs text-center">+56 9 1234 5678</p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

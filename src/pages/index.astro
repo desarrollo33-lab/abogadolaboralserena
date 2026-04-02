@@ -1,0 +1,107 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { siteConfig, services, locations, testimonials } from '../data/content';
+---
+
+<BaseLayout
+  title="Abogado Laboral La Serena | La Serena, Coquimbo"
+  description="Abogado laboral en La Serena. Despidos injustificados, indemnizaciones, cobro de prestaciones y más. Consulta inicial gratis. 10+ años de experiencia."
+>
+  <section class="relative bg-gradient-to-br from-[#1B3A5C] via-[#142848] to-[#0D1634] text-white overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
+      <div class="max-w-3xl">
+        <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-1.5 mb-6">
+          <span class="w-2 h-2 bg-[#C8A951] rounded-full animate-pulse"></span>
+          <span class="text-[#C8A951] text-sm font-medium">La Serena, Coquimbo</span>
+        </div>
+        <h1 class="text-4xl lg:text-5xl xl:text-6xl font-extrabold leading-tight mb-6">
+          Abogado Laboral en<br />
+          <span class="text-[#C8A951]">La Serena</span>
+        </h1>
+        <p class="text-xl text-gray-300 mb-8 max-w-2xl leading-relaxed">
+          Más de 10 años defendiendo trabajadores. Despidos injustificados, indemnizaciones, cobro de prestaciones y hostigamiento laboral. Primera consulta sin costo.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="https://wa.me/56912345678?text=Hola%2C%20necesito%20consultar%20con%20un%20abogado%20laboral%20en%20La%20Serena" target="_blank"
+            class="inline-flex items-center justify-center gap-2 bg-[#C8A951] text-[#1B3A5C] font-bold px-6 py-4 rounded-xl hover:bg-[#D5B652] transition-colors no-underline text-lg">
+            Consulta Inicial Gratis
+          </a>
+          <a href="/servicios" class="inline-flex items-center justify-center gap-2 bg-white/10 text-white font-semibold px-6 py-4 rounded-xl border-2 border-white/20 hover:bg-white/20 transition-colors no-underline text-lg">
+            Ver Servicios
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-[#0D1634]/50 border-t border-white/10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
+        <p class="text-[#C8A951] text-xs font-medium mb-2 uppercase tracking-wider">Cobertura en La Serena</p>
+        <div class="flex flex-wrap gap-2">
+          <a href="/barrios/cerro-grande-la-serena" class="bg-white/10 hover:bg-white/20 text-white text-xs font-medium px-3 py-1 rounded-full transition-colors no-underline">Cerro Grande</a>
+          <a href="/barrios/las-companias-la-serena" class="bg-white/10 hover:bg-white/20 text-white text-xs font-medium px-3 py-1 rounded-full transition-colors no-underline">Las Compañías</a>
+          <a href="/barrios/san-joaquin-la-serena" class="bg-white/10 hover:bg-white/20 text-white text-xs font-medium px-3 py-1 rounded-full transition-colors no-underline">San Joaquín</a>
+          <a href="/barrios/puerta-del-mar-la-serena" class="bg-white/10 hover:bg-white/20 text-white text-xs font-medium px-3 py-1 rounded-full transition-colors no-underline">Puerta del Mar</a>
+          <a href="/barrios/barrio-german-rio-la-serena" class="bg-white/10 hover:bg-white/20 text-white text-xs font-medium px-3 py-1 rounded-full transition-colors no-underline">Barrio Germán Río</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-[#E8EDF3] border-b border-gray-200 py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="text-center"><div class="text-3xl font-extrabold text-[#1B3A5C]">10+</div><div class="text-sm text-gray-600 mt-1">Años de experiencia</div></div>
+        <div class="text-center"><div class="text-3xl font-extrabold text-[#1B3A5C]">450+</div><div class="text-sm text-gray-600 mt-1">Casos resueltos</div></div>
+        <div class="text-center"><div class="text-3xl font-extrabold text-[#1B3A5C]">4.9</div><div class="text-sm text-gray-600 mt-1">Rating promedio</div></div>
+        <div class="text-center"><div class="text-3xl font-extrabold text-[#1B3A5C]">186+</div><div class="text-sm text-gray-600 mt-1">Clientes satisfechos</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14">
+        <h2 class="text-3xl lg:text-4xl font-extrabold text-gray-900">Nuestros Servicios Legales</h2>
+        <p class="mt-4 text-lg text-gray-500 max-w-2xl mx-auto">Protección laboral integral para trabajadores en La Serena y toda la región de Coquimbo.</p>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <a href="/servicios/abogado-despido-injustificado-la-serena" class="block bg-white border border-gray-200 rounded-2xl p-6 no-underline hover:shadow-lg hover:border-[#C8A951]/30 transition-all"><div class="w-12 h-12 bg-[#E8EDF3] rounded-xl flex items-center justify-center mb-4"><svg class="w-6 h-6 text-[#1B3A5C]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" /></svg></div><h3 class="font-bold text-lg text-gray-900 mb-2">Abogado Despido Injustificado en La Serena</h3><p class="text-gray-500 text-sm leading-relaxed mb-4">Defendemos tus derechos ante despidos sin causa legal en La Serena. Representación efectiva ante el Juzgado de Letras de...</p><span class="text-[#1B3A5C] text-sm font-semibold flex items-center gap-1">Más información <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7-7" /></svg></span></a>
+        <a href="/servicios/abogado-cobro-prestaciones-la-serena" class="block bg-white border border-gray-200 rounded-2xl p-6 no-underline hover:shadow-lg hover:border-[#C8A951]/30 transition-all"><div class="w-12 h-12 bg-[#E8EDF3] rounded-xl flex items-center justify-center mb-4"><svg class="w-6 h-6 text-[#1B3A5C]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" /></svg></div><h3 class="font-bold text-lg text-gray-900 mb-2">Abogado Cobro de Prestaciones en La Serena</h3><p class="text-gray-500 text-sm leading-relaxed mb-4">Reclamamos tus vacaciones, gratificaciones, cotizaciones y todos los derechos laborales que tu empleador no te pagó en L...</p><span class="text-[#1B3A5C] text-sm font-semibold flex items-center gap-1">Más información <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7-7" /></svg></span></a>
+        <a href="/servicios/abogado-indemnizacion-la-serena" class="block bg-white border border-gray-200 rounded-2xl p-6 no-underline hover:shadow-lg hover:border-[#C8A951]/30 transition-all"><div class="w-12 h-12 bg-[#E8EDF3] rounded-xl flex items-center justify-center mb-4"><svg class="w-6 h-6 text-[#1B3A5C]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" /></svg></div><h3 class="font-bold text-lg text-gray-900 mb-2">Abogado Indemnización Laboral en La Serena</h3><p class="text-gray-500 text-sm leading-relaxed mb-4">Calculamos y exigimos tu indemnización por años de servicio completa. Pago con intereses corrientes desde la fecha del d...</p><span class="text-[#1B3A5C] text-sm font-semibold flex items-center gap-1">Más información <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7-7" /></svg></span></a>
+        <a href="/servicios/abogado-hostigamiento-laboral-la-serena" class="block bg-white border border-gray-200 rounded-2xl p-6 no-underline hover:shadow-lg hover:border-[#C8A951]/30 transition-all"><div class="w-12 h-12 bg-[#E8EDF3] rounded-xl flex items-center justify-center mb-4"><svg class="w-6 h-6 text-[#1B3A5C]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" /></svg></div><h3 class="font-bold text-lg text-gray-900 mb-2">Abogado Hostigamiento y Acoso Laboral en La Serena</h3><p class="text-gray-500 text-sm leading-relaxed mb-4">Defendemos a trabajadores víctimas de hostigamiento y acoso laboral en La Serena. Denuncia ante Inspección del Trabajo y...</p><span class="text-[#1B3A5C] text-sm font-semibold flex items-center gap-1">Más información <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7-7" /></svg></span></a>
+        <a href="/servicios/abogado-fuero-maternal-la-serena" class="block bg-white border border-gray-200 rounded-2xl p-6 no-underline hover:shadow-lg hover:border-[#C8A951]/30 transition-all"><div class="w-12 h-12 bg-[#E8EDF3] rounded-xl flex items-center justify-center mb-4"><svg class="w-6 h-6 text-[#1B3A5C]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" /></svg></div><h3 class="font-bold text-lg text-gray-900 mb-2">Abogado Fuero Maternal en La Serena</h3><p class="text-gray-500 text-sm leading-relaxed mb-4">Protección legal completa para trabajadoras embarazadas y en período de postnatal en La Serena. Despido nulo y reintegro...</p><span class="text-[#1B3A5C] text-sm font-semibold flex items-center gap-1">Más información <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7-7" /></svg></span></a>
+        <a href="/servicios/abogado-accidente-laboral-la-serena" class="block bg-white border border-gray-200 rounded-2xl p-6 no-underline hover:shadow-lg hover:border-[#C8A951]/30 transition-all"><div class="w-12 h-12 bg-[#E8EDF3] rounded-xl flex items-center justify-center mb-4"><svg class="w-6 h-6 text-[#1B3A5C]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" /></svg></div><h3 class="font-bold text-lg text-gray-900 mb-2">Abogado Accidente Laboral en La Serena</h3><p class="text-gray-500 text-sm leading-relaxed mb-4">Abogado especialista en accidentes laborales en La Serena. Reclamamos seguro de la Ley 16.744 y daños civiles por neglig...</p><span class="text-[#1B3A5C] text-sm font-semibold flex items-center gap-1">Más información <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7-7" /></svg></span></a>
+        <a href="/servicios/abogado-regulacion-funciones-la-serena" class="block bg-white border border-gray-200 rounded-2xl p-6 no-underline hover:shadow-lg hover:border-[#C8A951]/30 transition-all"><div class="w-12 h-12 bg-[#E8EDF3] rounded-xl flex items-center justify-center mb-4"><svg class="w-6 h-6 text-[#1B3A5C]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" /></svg></div><h3 class="font-bold text-lg text-gray-900 mb-2">Abogado Regulación de Funciones en La Serena</h3><p class="text-gray-500 text-sm leading-relaxed mb-4">Defendemos tu estabilidad laboral ante cambios unilaterales de funciones en La Serena. Rescisión indirecta y indemnizaci...</p><span class="text-[#1B3A5C] text-sm font-semibold flex items-center gap-1">Más información <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7-7" /></svg></span></a>
+        <a href="/servicios/abogado-laboral-empresas-la-serena" class="block bg-white border border-gray-200 rounded-2xl p-6 no-underline hover:shadow-lg hover:border-[#C8A951]/30 transition-all"><div class="w-12 h-12 bg-[#E8EDF3] rounded-xl flex items-center justify-center mb-4"><svg class="w-6 h-6 text-[#1B3A5C]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" /></svg></div><h3 class="font-bold text-lg text-gray-900 mb-2">Abogado Laboral para Empresas en La Serena</h3><p class="text-gray-500 text-sm leading-relaxed mb-4">Asesoría laboral integral para empresas en La Serena y Coquimbo. Prevención de demandas, contratos, despidos con causa y...</p><span class="text-[#1B3A5C] text-sm font-semibold flex items-center gap-1">Más información <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7-7" /></svg></span></a>
+        <a href="/servicios/abogado-despido-colectivo-la-serena" class="block bg-white border border-gray-200 rounded-2xl p-6 no-underline hover:shadow-lg hover:border-[#C8A951]/30 transition-all"><div class="w-12 h-12 bg-[#E8EDF3] rounded-xl flex items-center justify-center mb-4"><svg class="w-6 h-6 text-[#1B3A5C]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" /></svg></div><h3 class="font-bold text-lg text-gray-900 mb-2">Abogado Despido Colectivo en La Serena</h3><p class="text-gray-500 text-sm leading-relaxed mb-4">Defendemos a trabajadores ante despidos masivos o cierre de empresas en La Serena y Coquimbo. Reclamo de todas las prest...</p><span class="text-[#1B3A5C] text-sm font-semibold flex items-center gap-1">Más información <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7-7" /></svg></span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 bg-[#E8EDF3]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14">
+        <h2 class="text-3xl lg:text-4xl font-extrabold text-gray-900">Lo que dicen nuestros clientes</h2>
+        <p class="mt-4 text-lg text-gray-500">Más de 186 clientes confían en nosotros.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white rounded-2xl p-6 shadow-sm"><div class="flex gap-1 mb-3 text-[#C8A951]">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="text-gray-600 text-sm leading-relaxed mb-4">"Me despidieron de un restaurant en Cerro Grande sin previo aviso y sin pagarme las vacaciones que tenía acumuladas. Gracias a su apoyo recuperé toda la indemnización más los intereses. El proceso fue más rápido de lo que esperaba y siempre me mantuvieron informado."</p><div class="flex items-center gap-3"><div class="w-10 h-10 bg-[#1B3A5C] rounded-full flex items-center justify-center text-white font-bold text-sm">RM</div><div><div class="font-semibold text-sm text-gray-900">Roberto Méndez Vargas</div><div class="text-xs text-gray-500">Cerro Grande, La Serena</div></div></div></div>
+        <div class="bg-white rounded-2xl p-6 shadow-sm"><div class="flex gap-1 mb-3 text-[#C8A951]">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="text-gray-600 text-sm leading-relaxed mb-4">"Trabajaba en una empresa contratista de minería y me despidieron después de 3 años sin causa justificada. El abogado calculó exactamente lo que me correspondía incluyendo las cotizaciones AFP que el empleador no había pagado. Recuperé más de lo que esperaba."</p><div class="flex items-center gap-3"><div class="w-10 h-10 bg-[#1B3A5C] rounded-full flex items-center justify-center text-white font-bold text-sm">CG</div><div><div class="font-semibold text-sm text-gray-900">Carmen Gloria Soto Pizarro</div><div class="text-xs text-gray-500">Las Compañías, La Serena</div></div></div></div>
+        <div class="bg-white rounded-2xl p-6 shadow-sm"><div class="flex gap-1 mb-3 text-[#C8A951]">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="text-gray-600 text-sm leading-relaxed mb-4">"Estaba embarazada de cuatro meses cuando me despidieron de un call center en San Joaquín. A pesar de no haber avisado formalmente, el despido fue declarado nulo. Obtuve el reintegro y el pago de todos los salarios caídos durante el período de fuero."</p><div class="flex items-center gap-3"><div class="w-10 h-10 bg-[#1B3A5C] rounded-full flex items-center justify-center text-white font-bold text-sm">JE</div><div><div class="font-semibold text-sm text-gray-900">Jorge Eduardo Contreras Muñoz</div><div class="text-xs text-gray-500">San Joaquín, La Serena</div></div></div></div>
+        <div class="bg-white rounded-2xl p-6 shadow-sm"><div class="flex gap-1 mb-3 text-[#C8A951]">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="text-gray-600 text-sm leading-relaxed mb-4">"Sufrí hostigamiento laboral durante meses por parte de mi supervisor en un hotel del centro. Presentaron la denuncia ante la Inspección del Trabajo de Coquimbo y después la demanda judicial. Obtuve una compensación por daño moral que nunca imaginé posible."</p><div class="flex items-center gap-3"><div class="w-10 h-10 bg-[#1B3A5C] rounded-full flex items-center justify-center text-white font-bold text-sm">Pd</div><div><div class="font-semibold text-sm text-gray-900">Patricia del Rosario Villagrán</div><div class="text-xs text-gray-500">Puerta del Mar, La Serena</div></div></div></div>
+        <div class="bg-white rounded-2xl p-6 shadow-sm"><div class="flex gap-1 mb-3 text-[#C8A951]">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="text-gray-600 text-sm leading-relaxed mb-4">"Tuve un accidente laboral en una obra de construcción cerca de la universidad y el empleador no quiso notificar a la mutualidad. Me ayudaron a reclamar las prestaciones de la Ley 16.744 y además demandamos por los daños. Todo salió非常好."</p><div class="flex items-center gap-3"><div class="w-10 h-10 bg-[#1B3A5C] rounded-full flex items-center justify-center text-white font-bold text-sm">FA</div><div><div class="font-semibold text-sm text-gray-900">Fernando Andrés Medina Lucero</div><div class="text-xs text-gray-500">Barrio Germán Río, La Serena</div></div></div></div>
+        <div class="bg-white rounded-2xl p-6 shadow-sm"><div class="flex gap-1 mb-3 text-[#C8A951]">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="text-gray-600 text-sm leading-relaxed mb-4">"Me debían varios meses de cotizaciónes AFP e isapre que mi empleador no había enterado. Además de cobrar las cotizaciónes, me ayudaron a calcular las vacaciones y gratificación que tampoco me habían pagado. Recuperé todo lo que me correspondía."</p><div class="flex items-center gap-3"><div class="w-10 h-10 bg-[#1B3A5C] rounded-full flex items-center justify-center text-white font-bold text-sm">MJ</div><div><div class="font-semibold text-sm text-gray-900">María José Rojas Espíndola</div><div class="text-xs text-gray-500">Cerro Grande, La Serena</div></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 bg-[#1B3A5C]">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl lg:text-4xl font-extrabold text-white mb-4">¿Necesitas un abogado laboral en La Serena?</h2>
+      <p class="text-gray-300 text-lg mb-8">Tu primera consulta es sin costo. Escríbenos por WhatsApp.</p>
+      <a href="https://wa.me/56912345678?text=Hola%2C%20necesito%20consultar%20con%20un%20abogado%20laboral%20en%20La%20Serena" target="_blank"
+        class="inline-flex items-center gap-2 bg-[#C8A951] text-[#1B3A5C] font-bold px-8 py-4 rounded-xl hover:bg-[#D5B652] transition-colors no-underline text-lg">
+        Escribir por WhatsApp
+      </a>
+    </div>
+  </section>
+</BaseLayout>

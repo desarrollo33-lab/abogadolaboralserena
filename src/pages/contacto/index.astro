@@ -1,0 +1,47 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { siteConfig } from '../../data/content';
+---
+
+<BaseLayout title="Contacto | Abogado Laboral La Serena" description="Contacta al abogado laboral en La Serena. Primera consulta sin costo. WhatsApp, teléfono y formulario de contacto.">
+  <section class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14">
+        <h1 class="text-3xl lg:text-4xl font-extrabold text-gray-900">Contáctanos</h1>
+        <p class="mt-4 text-lg text-gray-500 max-w-2xl mx-auto">Tu primera consulta es sin costo. Te respondemos en menos de 2 horas.</p>
+      </div>
+      <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div class="space-y-6">
+          <div class="bg-[#E8EDF3] rounded-2xl p-6">
+            <h3 class="font-bold text-[#1B3A5C] mb-2">WhatsApp</h3>
+            <p class="text-gray-600 text-sm mb-3">La forma más rápida de contactarnos.</p>
+            <a href="https://wa.me/56912345678?text=Hola%2C%20necesito%20consultar%20con%20un%20abogado%20laboral%20en%20La%20Serena" target="_blank" class="inline-flex items-center gap-2 bg-green-500 text-white font-semibold px-4 py-2 rounded-lg hover:bg-green-600 transition-colors no-underline text-sm">Escribir por WhatsApp →</a>
+          </div>
+          <div class="bg-[#E8EDF3] rounded-2xl p-6">
+            <h3 class="font-bold text-[#1B3A5C] mb-2">Teléfono</h3>
+            <p class="text-gray-600 text-sm">+56 9 1234 5678</p>
+          </div>
+          <div class="bg-[#E8EDF3] rounded-2xl p-6">
+            <h3 class="font-bold text-[#1B3A5C] mb-2">Email</h3>
+            <p class="text-gray-600 text-sm">info@abogadolaboralserena.cl</p>
+          </div>
+          <div class="bg-[#E8EDF3] rounded-2xl p-6">
+            <h3 class="font-bold text-[#1B3A5C] mb-2">Oficina</h3>
+            <p class="text-gray-600 text-sm">Calle Principal #123, Oficina 456</p>
+            <p class="text-gray-600 text-sm">La Serena, Coquimbo</p>
+            <p class="text-gray-600 text-sm mt-1">Mo-Fr 09:00-19:00, Sa 10:00-14:00</p>
+          </div>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-2xl p-6">
+          <h3 class="font-bold text-gray-900 mb-4">Envíanos un mensaje</h3>
+          <form class="space-y-4">
+            <div><label class="block text-sm font-medium text-gray-700 mb-1">Nombre completo</label><input type="text" required class="w-full border border-gray-300 rounded-lg px-4 py-2 text-sm focus:ring-2 focus:ring-[#C8A951] focus:border-transparent outline-none" /></div>
+            <div><label class="block text-sm font-medium text-gray-700 mb-1">Teléfono</label><input type="tel" required class="w-full border border-gray-300 rounded-lg px-4 py-2 text-sm focus:ring-2 focus:ring-[#C8A951] focus:border-transparent outline-none" /></div>
+            <div><label class="block text-sm font-medium text-gray-700 mb-1">Describe tu caso</label><textarea rows="4" required class="w-full border border-gray-300 rounded-lg px-4 py-2 text-sm focus:ring-2 focus:ring-[#C8A951] focus:border-transparent outline-none resize-none"></textarea></div>
+            <button type="submit" class="w-full bg-[#1B3A5C] text-white font-semibold py-3 rounded-lg hover:bg-[#142848] transition-colors cursor-pointer">Enviar Consulta</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

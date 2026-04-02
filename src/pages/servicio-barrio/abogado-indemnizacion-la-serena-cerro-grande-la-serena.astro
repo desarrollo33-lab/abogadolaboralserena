@@ -1,0 +1,58 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { services, locations, combinations, siteConfig } from '../../data/content';
+
+const combo = combinations.find(cb => cb.serviceSlug === 'abogado-indemnizacion-la-serena' && cb.locationSlug === 'cerro-grande-la-serena')!;
+const service = services.find(s => s.slug === 'abogado-indemnizacion-la-serena')!;
+const location = locations.find(l => l.slug === 'cerro-grande-la-serena')!;
+---
+
+<BaseLayout title="Abogado Indemnización Laboral en Cerro Grande | Abogado Laboral La Serena" description="Los trabajadores de Cerro Grande merecen conocer exactamente cuánto les corresponde por su indemnización. Calculamos cada peso incluyendo bonos, comisiones e in">
+  <section class="bg-gradient-to-br from-[#1B3A5C] to-[#0D1634] text-white py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <nav class="text-sm text-gray-400 mb-4">
+        <a href="/" class="hover:text-white no-underline text-gray-400">Inicio</a> / <a href="/barrios/cerro-grande-la-serena" class="hover:text-white no-underline text-gray-400">Cerro Grande</a> / <span class="text-white">Abogado Indemnización Laboral</span>
+      </nav>
+      <h1 class="text-3xl lg:text-4xl font-extrabold mb-4">Abogado Indemnización Laboral en Cerro Grande</h1>
+      <p class="text-xl text-gray-300 max-w-3xl">Los trabajadores de Cerro Grande merecen conocer exactamente cuánto les corresponde por su indemnización. Calculamos cada peso incluyendo bonos, comisiones e intereses para que no aceptes menos.</p>
+    </div>
+  </section>
+
+  <section class="py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-3 gap-8">
+        <div class="lg:col-span-2">
+          <h2 class="text-2xl font-bold text-gray-900 mb-6">Nuestro servicio</h2>
+          <div class="grid sm:grid-cols-2 gap-4 mb-10">
+            <div class="flex items-start gap-3"><svg class="w-5 h-5 text-[#C8A951] mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span class="text-gray-600 text-sm">Cálculo exacto de indemnización por años de servicio</span></div>
+            <div class="flex items-start gap-3"><svg class="w-5 h-5 text-[#C8A951] mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span class="text-gray-600 text-sm">Consideración de todos los beneficios del contrato</span></div>
+            <div class="flex items-start gap-3"><svg class="w-5 h-5 text-[#C8A951] mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span class="text-gray-600 text-sm">Indemnización sustitutiva de aviso previo si aplica</span></div>
+            <div class="flex items-start gap-3"><svg class="w-5 h-5 text-[#C8A951] mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span class="text-gray-600 text-sm">Reclamo de intereses corrientes desde el despido</span></div>
+            <div class="flex items-start gap-3"><svg class="w-5 h-5 text-[#C8A951] mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span class="text-gray-600 text-sm">Cálculo de vacaciones y gratificación proporcional</span></div>
+            <div class="flex items-start gap-3"><svg class="w-5 h-5 text-[#C8A951] mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span class="text-gray-600 text-sm">Asesoría para negociar directamente con el empleador</span></div>
+          </div>
+          <h2 class="text-2xl font-bold text-gray-900 mb-6">Problemas comunes en Cerro Grande</h2>
+          <div class="space-y-3 mb-10">
+            <div class="flex items-start gap-3 p-4 bg-red-50 rounded-xl border border-red-100"><svg class="w-5 h-5 text-red-500 mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/></svg><span class="text-gray-700 text-sm">Indemnizaciones mal calculadas en Cerro Grande excluyendo bonos y comisiones permanentes</span></div>
+            <div class="flex items-start gap-3 p-4 bg-red-50 rounded-xl border border-red-100"><svg class="w-5 h-5 text-red-500 mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/></svg><span class="text-gray-700 text-sm">Empleadores ofrecen finiquitos anticipados en malls del sector sin explicar los intereses que corresponden</span></div>
+            <div class="flex items-start gap-3 p-4 bg-red-50 rounded-xl border border-red-100"><svg class="w-5 h-5 text-red-500 mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/></svg><span class="text-gray-700 text-sm">Tope de 11 años no respetado por empleadores que desconocen la normativa</span></div>
+          </div>
+          <h2 class="text-2xl font-bold text-gray-900 mb-6">Preguntas Frecuentes</h2>
+          <div class="space-y-4 mb-10">
+            <details class="border border-gray-200 rounded-xl p-4 group"><summary class="font-semibold text-gray-900 cursor-pointer text-sm flex justify-between items-center">¿Por qué mi indemnización calculada por el empleador es menor de lo que pienso?<svg class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></summary><p class="text-gray-600 text-sm mt-3 leading-relaxed">En Cerro Grande hemos visto que muchos empleadores calculan solo sobre el sueldo base. Pero la indemnización debe incluir todas las remuneraciones permanentes: bonos, comisiones, sobretiempo regular y cualquier beneficio en dinero.</p></details>
+            <details class="border border-gray-200 rounded-xl p-4 group"><summary class="font-semibold text-gray-900 cursor-pointer text-sm flex justify-between items-center">¿Cuánto interés me corresponde desde que me despidieron en Cerro Grande?<svg class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></summary><p class="text-gray-600 text-sm mt-3 leading-relaxed">Los intereses corrientes corren desde la fecha del despido hasta el pago efectivo. Si pasaron 6 meses sin pago, eso representa aproximadamente un 5% adicional sobre el monto total de tu indemnización.</p></details>
+          </div>
+        </div>
+        <aside class="lg:col-span-1">
+          <div class="bg-[#E8EDF3] rounded-2xl p-6 sticky top-20">
+            <h3 class="font-bold text-lg text-[#1B3A5C] mb-2">¿Necesitas ayuda en Cerro Grande?</h3>
+            <p class="text-gray-600 text-sm mb-2">Primera consulta sin costo.</p>
+            <p class="text-[#C8A951] font-semibold text-sm mb-4">Cálculo de indemnización en Cerro Grande desde $200.000. Si el empleador se niega a pagar lo correcto, demandamos sin costo adicional hasta el resultado.</p>
+            <a href="https://wa.me/56912345678?text=Hola%2C%20necesito%20ayuda%20en%20Cerro%20Grande%3A%20Abogado%20Indemnizaci%C3%B3n%20Laboral%20en%20La%20Serena" target="_blank" class="block bg-[#C8A951] text-[#1B3A5C] font-bold text-center px-4 py-3 rounded-xl hover:bg-[#D5B652] transition-colors no-underline text-sm mb-4">Consulta Gratis por WhatsApp</a>
+            <p class="text-gray-500 text-xs text-center">+56 9 1234 5678</p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

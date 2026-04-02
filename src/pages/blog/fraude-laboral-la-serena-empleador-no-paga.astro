@@ -1,0 +1,30 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { blogTopics, siteConfig } from '../../data/content';
+
+const post = blogTopics.find(p => p.slug === 'fraude-laboral-la-serena-empleador-no-paga')!;
+---
+
+<BaseLayout title="Fraude Laboral: Señales de que tu Empleador te Está Engañando | Abogado Laboral La Serena" description="fraude laboral La Serena - Abogado Laboral La Serena">
+  <section class="py-16">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <nav class="text-sm text-gray-400 mb-4">
+        <a href="/" class="hover:text-gray-900 no-underline text-gray-400">Inicio</a> / <a href="/blog" class="hover:text-gray-900 no-underline text-gray-400">Blog</a> / <span class="text-gray-900">Fraude Laboral: Señales de que tu Empleador te Está Engañando</span>
+      </nav>
+      <h1 class="text-3xl lg:text-4xl font-extrabold text-gray-900 mb-6">Fraude Laboral: Señales de que tu Empleador te Está Engañando</h1>
+      <div class="prose max-w-none">
+        <p class="text-lg text-gray-600 leading-relaxed mb-6">Información sobre <strong>fraude laboral La Serena</strong> para trabajadores en La Serena, Coquimbo.</p>
+        <p class="text-gray-600 leading-relaxed mb-4">En Abogado Laboral La Serena, entendemos que enfrentar un problema laboral puede ser una situación estresante y confusa. Ya sea que necesites orientación sobre tus derechos como trabajador o busques representación legal para un caso específico, estamos aquí para ayudarte.</p>
+        <h2 class="text-xl font-bold text-gray-900 mt-8 mb-4">¿Por qué es importante conocer tus derechos?</h2>
+        <p class="text-gray-600 leading-relaxed mb-4">Conocer la legislación laboral chilena es fundamental para proteger tus intereses. Desde la reforma laboral hasta las normativas vigentes, existen múltiples mecanismos que resguardan los derechos de los trabajadores.</p>
+        <h2 class="text-xl font-bold text-gray-900 mt-8 mb-4">Nuestro compromiso contigo</h2>
+        <p class="text-gray-600 leading-relaxed mb-4">Con más de 10 años de experiencia en La Serena, hemos ayudado a más de 450 trabajadores a resolver sus problemas laborales.</p>
+        <div class="bg-[#E8EDF3] rounded-xl p-6 mt-8">
+          <h3 class="font-bold text-[#1B3A5C] mb-2">¿Necesitas ayuda personalizada?</h3>
+          <p class="text-gray-600 text-sm mb-4">La primera consulta es sin costo. Contáctanos y revisaremos tu caso.</p>
+          <a href="/contacto" class="inline-flex items-center gap-2 bg-[#1B3A5C] text-white font-semibold px-4 py-2 rounded-lg hover:bg-[#142848] transition-colors no-underline text-sm">Contactar ahora →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

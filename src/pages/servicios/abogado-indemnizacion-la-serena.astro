@@ -1,0 +1,57 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { services, siteConfig } from '../../data/content';
+
+const service = services.find(s => s.slug === 'abogado-indemnizacion-la-serena')!;
+---
+
+<BaseLayout title="Abogado Indemnización Laboral La Serena | Pago Completo" description="Calculamos tu indemnización por años de servicio en La Serena. Pago completo con intereses. Consulta gratis y sin compromiso.">
+  <section class="bg-gradient-to-br from-[#1B3A5C] to-[#0D1634] text-white py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <nav class="text-sm text-gray-400 mb-4">
+        <a href="/" class="hover:text-white no-underline text-gray-400">Inicio</a> / <a href="/servicios" class="hover:text-white no-underline text-gray-400">Servicios</a> / <span class="text-white">Abogado Indemnización Laboral en La Serena</span>
+      </nav>
+      <h1 class="text-3xl lg:text-4xl font-extrabold mb-4">Abogado Indemnización Laboral en La Serena</h1>
+      <p class="text-xl text-gray-300 max-w-3xl">Calculamos y exigimos tu indemnización por años de servicio completa. Pago con intereses corrientes desde la fecha del despido.</p>
+    </div>
+  </section>
+
+  <section class="py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-3 gap-8">
+        <div class="lg:col-span-2">
+          <h2 class="text-2xl font-bold text-gray-900 mb-6">¿En qué consiste este servicio?</h2>
+          <div class="grid sm:grid-cols-2 gap-4 mb-10">
+            <div class="flex items-start gap-3"><svg class="w-5 h-5 text-[#C8A951] mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span class="text-gray-600 text-sm">Cálculo exacto de indemnización por años de servicio</span></div>
+            <div class="flex items-start gap-3"><svg class="w-5 h-5 text-[#C8A951] mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span class="text-gray-600 text-sm">Consideración de todos los beneficios del contrato</span></div>
+            <div class="flex items-start gap-3"><svg class="w-5 h-5 text-[#C8A951] mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span class="text-gray-600 text-sm">Indemnización sustitutiva de aviso previo si aplica</span></div>
+            <div class="flex items-start gap-3"><svg class="w-5 h-5 text-[#C8A951] mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span class="text-gray-600 text-sm">Reclamo de intereses corrientes desde el despido</span></div>
+            <div class="flex items-start gap-3"><svg class="w-5 h-5 text-[#C8A951] mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span class="text-gray-600 text-sm">Cálculo de vacaciones y gratificación proporcional</span></div>
+            <div class="flex items-start gap-3"><svg class="w-5 h-5 text-[#C8A951] mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span class="text-gray-600 text-sm">Asesoría para negociar directamente con el empleador</span></div>
+          </div>
+          <h2 class="text-2xl font-bold text-gray-900 mb-6">Proceso</h2>
+          <div class="space-y-4 mb-10">
+            <div class="flex items-start gap-4 p-4 bg-gray-50 rounded-xl"><div class="w-8 h-8 bg-[#1B3A5C] rounded-lg flex items-center justify-center text-white font-bold text-sm shrink-0">1</div><span class="text-gray-700 text-sm">Recopilamos tus liquidaciones de sueldo de los últimos 3 meses</span></div>
+            <div class="flex items-start gap-4 p-4 bg-gray-50 rounded-xl"><div class="w-8 h-8 bg-[#1B3A5C] rounded-lg flex items-center justify-center text-white font-bold text-sm shrink-0">2</div><span class="text-gray-700 text-sm">Calculamos exactamente lo que te corresponde por indemnización</span></div>
+            <div class="flex items-start gap-4 p-4 bg-gray-50 rounded-xl"><div class="w-8 h-8 bg-[#1B3A5C] rounded-lg flex items-center justify-center text-white font-bold text-sm shrink-0">3</div><span class="text-gray-700 text-sm">Reclamamos directamente al empleador o presentamos demanda judicial</span></div>
+            <div class="flex items-start gap-4 p-4 bg-gray-50 rounded-xl"><div class="w-8 h-8 bg-[#1B3A5C] rounded-lg flex items-center justify-center text-white font-bold text-sm shrink-0">4</div><span class="text-gray-700 text-sm">Acompañamiento hasta el pago total con intereses corrientes</span></div>
+          </div>
+          <h2 class="text-2xl font-bold text-gray-900 mb-6">Preguntas Frecuentes</h2>
+          <div class="space-y-4 mb-10">
+            <details class="border border-gray-200 rounded-xl p-4 group"><summary class="font-semibold text-gray-900 cursor-pointer text-sm flex justify-between items-center">¿Cómo se calcula la indemnización por años de servicio?<svg class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></summary><p class="text-gray-600 text-sm mt-3 leading-relaxed">Multiplica tu remuneración mensual promedio de los últimos 3 meses por los años trabajados (máximo 11 años). Este es el monto base de tu indemnización.</p></details>
+            <details class="border border-gray-200 rounded-xl p-4 group"><summary class="font-semibold text-gray-900 cursor-pointer text-sm flex justify-between items-center">¿Qué incluye la remuneración para el cálculo de indemnización?<svg class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></summary><p class="text-gray-600 text-sm mt-3 leading-relaxed">Incluye sueldo base, bonos permanentes, comisiones, sobretiempo regular y cualquier beneficio en dinero que recibas mensualmente de forma habitual.</p></details>
+            <details class="border border-gray-200 rounded-xl p-4 group"><summary class="font-semibold text-gray-900 cursor-pointer text-sm flex justify-between items-center">¿Desde cuándo corren los intereses de la indemnización?<svg class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></summary><p class="text-gray-600 text-sm mt-3 leading-relaxed">Los intereses corrientes corren desde la fecha del despido hasta la fecha del pago efectivo. El empleador debe pagar estos intereses junto con la indemnización.</p></details>
+          </div>
+        </div>
+        <aside class="lg:col-span-1">
+          <div class="bg-[#E8EDF3] rounded-2xl p-6 sticky top-20">
+            <h3 class="font-bold text-lg text-[#1B3A5C] mb-2">¿Necesitas ayuda?</h3>
+            <p class="text-gray-600 text-sm mb-4">Primera consulta sin costo. WhatsApp en menos de 2 horas.</p>
+            <a href="https://wa.me/56912345678?text=Hola%2C%20necesito%20ayuda%20con%3A%20Abogado%20Indemnizaci%C3%B3n%20Laboral%20en%20La%20Serena" target="_blank" class="block bg-[#C8A951] text-[#1B3A5C] font-bold text-center px-4 py-3 rounded-xl hover:bg-[#D5B652] transition-colors no-underline text-sm mb-4">Consulta Gratis por WhatsApp</a>
+            <p class="text-gray-500 text-xs text-center">+56 9 1234 5678</p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

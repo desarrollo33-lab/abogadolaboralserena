@@ -1,0 +1,34 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { locations, services, combinations, siteConfig } from '../../data/content';
+
+const location = locations.find(loc => loc.slug === 'cerro-grande-la-serena')!;
+const locationCombos = combinations.filter(c => c.locationSlug === 'cerro-grande-la-serena');
+---
+
+<BaseLayout title="Abogado Laboral en Cerro Grande, La Serena | Abogado Laboral La Serena" description="Abogado laboral en Cerro Grande, La Serena. Despidos injustificados, indemnizaciones y cobro de prestaciones. Consulta gratis.">
+  <section class="bg-gradient-to-br from-[#1B3A5C] to-[#0D1634] text-white py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <nav class="text-sm text-gray-400 mb-4">
+        <a href="/" class="hover:text-white no-underline text-gray-400">Inicio</a> / <a href="/barrios" class="hover:text-white no-underline text-gray-400">Barrios</a> / <span class="text-white">Cerro Grande</span>
+      </nav>
+      <h1 class="text-3xl lg:text-4xl font-extrabold mb-4">Abogado Laboral en Cerro Grande</h1>
+      <p class="text-xl text-gray-300 max-w-3xl">Atendemos a trabajadores de Cerro Grande, La Serena. Cerro Grande, Barrio El Litre, Población Japón y zonas aledañas.</p>
+    </div>
+  </section>
+  <section class="py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl font-bold text-gray-900 mb-8">Servicios en Cerro Grande</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <a href="/servicio-barrio/abogado-despido-injustificado-la-serena-cerro-grande-la-serena" class="block bg-white border border-gray-200 rounded-2xl p-6 no-underline hover:shadow-lg hover:border-[#C8A951]/30 transition-all"><h3 class="font-bold text-gray-900 mb-2">Abogado Despido Injustificado en Cerro Grande</h3><p class="text-gray-500 text-sm mb-3">Si te despidieron sin causa en Cerro Grande, cuenta con nosotros para defender tus derechos. Conocem...</p><span class="text-[#1B3A5C] text-sm font-semibold">Ver más →</span></a>
+        <a href="/servicio-barrio/abogado-indemnizacion-la-serena-cerro-grande-la-serena" class="block bg-white border border-gray-200 rounded-2xl p-6 no-underline hover:shadow-lg hover:border-[#C8A951]/30 transition-all"><h3 class="font-bold text-gray-900 mb-2">Abogado Indemnización Laboral en Cerro Grande</h3><p class="text-gray-500 text-sm mb-3">Los trabajadores de Cerro Grande merecen conocer exactamente cuánto les corresponde por su indemniza...</p><span class="text-[#1B3A5C] text-sm font-semibold">Ver más →</span></a>
+      </div>
+      <div class="mt-12"><h2 class="text-2xl font-bold text-gray-900 mb-6">Problemas comunes en Cerro Grande</h2><div class="grid sm:grid-cols-2 gap-4"><div class="flex items-start gap-3 p-4 bg-gray-50 rounded-xl"><svg class="w-5 h-5 text-[#C8A951] mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/></svg><span class="text-gray-700 text-sm">Despidos en malls y tiendas comerciales de Cerro Grande durante cambios de temporada sin pagar indemnización completa</span></div>
+          <div class="flex items-start gap-3 p-4 bg-gray-50 rounded-xl"><svg class="w-5 h-5 text-[#C8A951] mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/></svg><span class="text-gray-700 text-sm">Finiquitos ofrecidos por empleadores de delivery sin incluir todas las prestaciones laborales adeudadas</span></div>
+          <div class="flex items-start gap-3 p-4 bg-gray-50 rounded-xl"><svg class="w-5 h-5 text-[#C8A951] mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/></svg><span class="text-gray-700 text-sm">Trabajadores del retail enfrentan presiones para renunciar voluntariamente perdiendo derechos por años de servicio</span></div>
+          <div class="flex items-start gap-3 p-4 bg-gray-50 rounded-xl"><svg class="w-5 h-5 text-[#C8A951] mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/></svg><span class="text-gray-700 text-sm">Indemnizaciones mal calculadas en Cerro Grande excluyendo bonos y comisiones permanentes</span></div>
+          <div class="flex items-start gap-3 p-4 bg-gray-50 rounded-xl"><svg class="w-5 h-5 text-[#C8A951] mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/></svg><span class="text-gray-700 text-sm">Empleadores ofrecen finiquitos anticipados en malls del sector sin explicar los intereses que corresponden</span></div>
+          <div class="flex items-start gap-3 p-4 bg-gray-50 rounded-xl"><svg class="w-5 h-5 text-[#C8A951] mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/></svg><span class="text-gray-700 text-sm">Tope de 11 años no respetado por empleadores que desconocen la normativa</span></div></div></div>
+    </div>
+  </section>
+</BaseLayout>

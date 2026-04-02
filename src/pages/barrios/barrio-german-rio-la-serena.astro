@@ -1,0 +1,30 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { locations, services, combinations, siteConfig } from '../../data/content';
+
+const location = locations.find(loc => loc.slug === 'barrio-german-rio-la-serena')!;
+const locationCombos = combinations.filter(c => c.locationSlug === 'barrio-german-rio-la-serena');
+---
+
+<BaseLayout title="Abogado Laboral en Barrio Germán Río, La Serena | Abogado Laboral La Serena" description="Abogado laboral en Barrio Germán Río, La Serena. Despidos injustificados, indemnizaciones y cobro de prestaciones. Consulta gratis.">
+  <section class="bg-gradient-to-br from-[#1B3A5C] to-[#0D1634] text-white py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <nav class="text-sm text-gray-400 mb-4">
+        <a href="/" class="hover:text-white no-underline text-gray-400">Inicio</a> / <a href="/barrios" class="hover:text-white no-underline text-gray-400">Barrios</a> / <span class="text-white">Barrio Germán Río</span>
+      </nav>
+      <h1 class="text-3xl lg:text-4xl font-extrabold mb-4">Abogado Laboral en Barrio Germán Río</h1>
+      <p class="text-xl text-gray-300 max-w-3xl">Atendemos a trabajadores de Barrio Germán Río, La Serena. Barrio Germán Río, Villa Jerman, Barrio Colina El Pino y zonas aledañas.</p>
+    </div>
+  </section>
+  <section class="py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl font-bold text-gray-900 mb-8">Servicios en Barrio Germán Río</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <a href="/servicio-barrio/abogado-hostigamiento-laboral-la-serena-barrio-german-rio-la-serena" class="block bg-white border border-gray-200 rounded-2xl p-6 no-underline hover:shadow-lg hover:border-[#C8A951]/30 transition-all"><h3 class="font-bold text-gray-900 mb-2">Abogado Hostigamiento y Acoso Laboral en Barrio Germán Río</h3><p class="text-gray-500 text-sm mb-3">El hostigamiento laboral es más común de lo que crees en el sector Germán Río, cerca de la universid...</p><span class="text-[#1B3A5C] text-sm font-semibold">Ver más →</span></a>
+      </div>
+      <div class="mt-12"><h2 class="text-2xl font-bold text-gray-900 mb-6">Problemas comunes en Barrio Germán Río</h2><div class="grid sm:grid-cols-2 gap-4"><div class="flex items-start gap-3 p-4 bg-gray-50 rounded-xl"><svg class="w-5 h-5 text-[#C8A951] mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/></svg><span class="text-gray-700 text-sm">Trabajadores jóvenes cerca de la universidad enfrentan presión excesiva y comentarios degradantes en empresas con culturas organizacionales tóxicas</span></div>
+          <div class="flex items-start gap-3 p-4 bg-gray-50 rounded-xl"><svg class="w-5 h-5 text-[#C8A951] mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/></svg><span class="text-gray-700 text-sm">Hostigamiento por superiores jerárquicos en empresas tecnológicas y de servicios del sector Germán Río</span></div>
+          <div class="flex items-start gap-3 p-4 bg-gray-50 rounded-xl"><svg class="w-5 h-5 text-[#C8A951] mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/></svg><span class="text-gray-700 text-sm">Acoso sexual disfrazado de bromas en ambientes laborales donde existe miedo a represalias por denunciar</span></div></div></div>
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,58 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { services, locations, combinations, siteConfig } from '../../data/content';
+
+const combo = combinations.find(cb => cb.serviceSlug === 'abogado-despido-colectivo-la-serena' && cb.locationSlug === 'las-companias-la-serena')!;
+const service = services.find(s => s.slug === 'abogado-despido-colectivo-la-serena')!;
+const location = locations.find(l => l.slug === 'las-companias-la-serena')!;
+---
+
+<BaseLayout title="Abogado Despido Colectivo en Las Compañías | Abogado Laboral La Serena" description="Cuando una empresa minera o contratista en Las Compañías cierra o despide masivamente, los trabajadores quedan en desventaja. Defendemos tus derechos como grupo">
+  <section class="bg-gradient-to-br from-[#1B3A5C] to-[#0D1634] text-white py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <nav class="text-sm text-gray-400 mb-4">
+        <a href="/" class="hover:text-white no-underline text-gray-400">Inicio</a> / <a href="/barrios/las-companias-la-serena" class="hover:text-white no-underline text-gray-400">Las Compañías</a> / <span class="text-white">Abogado Despido Colectivo</span>
+      </nav>
+      <h1 class="text-3xl lg:text-4xl font-extrabold mb-4">Abogado Despido Colectivo en Las Compañías</h1>
+      <p class="text-xl text-gray-300 max-w-3xl">Cuando una empresa minera o contratista en Las Compañías cierra o despide masivamente, los trabajadores quedan en desventaja. Defendemos tus derechos como grupo para obtener todas las prestaciones e indemnización aumentada.</p>
+    </div>
+  </section>
+
+  <section class="py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-3 gap-8">
+        <div class="lg:col-span-2">
+          <h2 class="text-2xl font-bold text-gray-900 mb-6">Nuestro servicio</h2>
+          <div class="grid sm:grid-cols-2 gap-4 mb-10">
+            <div class="flex items-start gap-3"><svg class="w-5 h-5 text-[#C8A951] mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span class="text-gray-600 text-sm">Demanda colectiva por despidos masivos</span></div>
+            <div class="flex items-start gap-3"><svg class="w-5 h-5 text-[#C8A951] mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span class="text-gray-600 text-sm">Cobro de indemnización por años de servicio para cada trabajador</span></div>
+            <div class="flex items-start gap-3"><svg class="w-5 h-5 text-[#C8A951] mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span class="text-gray-600 text-sm">Reclamo de aviso previo para todos los afectados</span></div>
+            <div class="flex items-start gap-3"><svg class="w-5 h-5 text-[#C8A951] mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span class="text-gray-600 text-sm">Gestión ante quiebra o liquidación de la empresa</span></div>
+            <div class="flex items-start gap-3"><svg class="w-5 h-5 text-[#C8A951] mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span class="text-gray-600 text-sm">Prioridad en créditos laborales ante terceros</span></div>
+            <div class="flex items-start gap-3"><svg class="w-5 h-5 text-[#C8A951] mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span class="text-gray-600 text-sm">Negociación con administradores o liquidadores</span></div>
+          </div>
+          <h2 class="text-2xl font-bold text-gray-900 mb-6">Problemas comunes en Las Compañías</h2>
+          <div class="space-y-3 mb-10">
+            <div class="flex items-start gap-3 p-4 bg-red-50 rounded-xl border border-red-100"><svg class="w-5 h-5 text-red-500 mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/></svg><span class="text-gray-700 text-sm">Cierre de faenas mineras en Las Compañías dejando a cientos de trabajadores sin trabajo ni prestaciones</span></div>
+            <div class="flex items-start gap-3 p-4 bg-red-50 rounded-xl border border-red-100"><svg class="w-5 h-5 text-red-500 mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/></svg><span class="text-gray-700 text-sm">Despidos masivos en empresas portuarias de Coquimbo sin aviso previo ni plan de desvinculación</span></div>
+            <div class="flex items-start gap-3 p-4 bg-red-50 rounded-xl border border-red-100"><svg class="w-5 h-5 text-red-500 mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/></svg><span class="text-gray-700 text-sm">Quiebra de empresas que dejan a trabajadores como acreedores sin recursos para cobrar</span></div>
+          </div>
+          <h2 class="text-2xl font-bold text-gray-900 mb-6">Preguntas Frecuentes</h2>
+          <div class="space-y-4 mb-10">
+            <details class="border border-gray-200 rounded-xl p-4 group"><summary class="font-semibold text-gray-900 cursor-pointer text-sm flex justify-between items-center">¿Qué protections tengo si hay despidos masivos en mi empresa de Las Compañías?<svg class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></summary><p class="text-gray-600 text-sm mt-3 leading-relaxed">Los trabajadores tienen prioridad en los créditos laborales sobre otros acreedores. Si la empresa cierra, puedes reclamar ante el tribunal para proteger tus derechos como acreedor preferente y obtener el pago completo de tus prestaciones.</p></details>
+            <details class="border border-gray-200 rounded-xl p-4 group"><summary class="font-semibold text-gray-900 cursor-pointer text-sm flex justify-between items-center">¿Puedo denunciar penalmente si el empleador esconde activos antes del cierre en Las Compañías?<svg class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></summary><p class="text-gray-600 text-sm mt-3 leading-relaxed">Sí. Si el empleador simula cierre o esconde activos para no pagar a los trabajadores, esto puede constituir un delito penal. Un abogado laboral en Las Compañías puede orientar la acción penal junto con la demanda civil.</p></details>
+          </div>
+        </div>
+        <aside class="lg:col-span-1">
+          <div class="bg-[#E8EDF3] rounded-2xl p-6 sticky top-20">
+            <h3 class="font-bold text-lg text-[#1B3A5C] mb-2">¿Necesitas ayuda en Las Compañías?</h3>
+            <p class="text-gray-600 text-sm mb-2">Primera consulta sin costo.</p>
+            <p class="text-[#C8A951] font-semibold text-sm mb-4">Despidos colectivos en Las Compañías desde $500.000 por trabajador. Si son muchos afectados, hacemos demanda colectiva con mejores condiciones.</p>
+            <a href="https://wa.me/56912345678?text=Hola%2C%20necesito%20ayuda%20en%20Las%20Compa%C3%B1%C3%ADas%3A%20Abogado%20Despido%20Colectivo%20en%20La%20Serena" target="_blank" class="block bg-[#C8A951] text-[#1B3A5C] font-bold text-center px-4 py-3 rounded-xl hover:bg-[#D5B652] transition-colors no-underline text-sm mb-4">Consulta Gratis por WhatsApp</a>
+            <p class="text-gray-500 text-xs text-center">+56 9 1234 5678</p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
